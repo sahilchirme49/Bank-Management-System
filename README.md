@@ -1,6 +1,7 @@
 
 
 ````markdown
+---
 # Bank Management System
 
 A Java-based Bank Management System built using JavaFX for the front-end and MySQL for the database.
