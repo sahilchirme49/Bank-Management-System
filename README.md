@@ -1,3 +1,6 @@
+
+
+
 # 🏦 Bank Management System
 
 A full-featured **JavaFX + MySQL** banking application that allows employees and customers to manage core banking operations such as account creation, deposits, withdrawals, and more — all with a simple graphical interface.
@@ -65,3 +68,89 @@ This project demonstrates database connectivity (JDBC), CRUD operations, and UI 
    ```bash
    git clone https://github.com/sahilchirme49/Bank-Management-System.git
    cd Bank-Management-System
+   ````
+
+2. **Set Up the Database**
+
+   * Start MySQL from XAMPP.
+   * Create a new schema named `bankdb`.
+   * Import the provided SQL file:
+
+     ```bash
+     mysql -u root -p bankdb < bank.sql
+     ```
+
+3. **Configure Database Connection**
+
+   * Open the project in your IDE.
+   * Update database credentials in the `DBConnection.java` or similar file:
+
+     ```java
+     String url = "jdbc:mysql://localhost:3306/bankdb";
+     String user = "root";
+     String password = "";
+     ```
+
+4. **Run the Application**
+
+   * Build and run the project.
+   * The main JavaFX window will appear.
+   * Start creating accounts, managing transactions, etc.
+
+---
+
+## 🧭 Usage
+
+* **Employees** can log in or register new accounts.
+* **Customers** can open new accounts, view balances, and perform transactions.
+* **Admins** can monitor overall operations and manage users.
+
+---
+
+## 🗂️ Project Structure
+
+```
+Bank-Management-System/
+├── src/                  # Java source files
+├── lib/                  # External dependencies (if any)
+├── bank.sql              # Database schema & sample data
+├── EERDiagram_Bank.png   # Database ER diagram
+├── build.xml             # Ant build script
+└── README.md             # Project documentation
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are always welcome!
+
+1. Fork the repository.
+2. Create a feature branch:
+
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Commit your changes and push:
+
+   ```bash
+   git push origin feature/your-feature
+   ```
+4. Open a Pull Request.
+
+Make sure to write clean code and meaningful commit messages.
+
+---
+
+## 📄 License
+
+This project is released under the **MIT License** — you’re free to use, modify, and distribute it with attribution.
+
+---
+
+### 💬 Author
+
+**Sahil Chirme**
+Java Developer | React Enthusiast | IT Engineering Student
+📧 [sahilchirme49@gmail.com](mailto:sahilchirme49@gmail.com)
+
