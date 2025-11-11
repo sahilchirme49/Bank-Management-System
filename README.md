@@ -1,126 +1,67 @@
+# 🏦 Bank Management System
 
-
-````markdown
----
-# Bank Management System
-
-A Java-based Bank Management System built using JavaFX for the front-end and MySQL for the database.
+A full-featured **JavaFX + MySQL** banking application that allows employees and customers to manage core banking operations such as account creation, deposits, withdrawals, and more — all with a simple graphical interface.
 
 ---
 
-##  Table of Contents
+## 📋 Table of Contents
 
-- [Overview](#overview)  
-- [Features](#features)  
-- [Technologies](#technologies)  
-- [System Requirements](#system-requirements)  
-- [Setup & Installation](#setup--installation)  
-- [Usage Guide](#usage-guide)  
-- [Project Structure](#project-structure)  
-- [Contributing](#contributing)  
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [System Requirements](#system-requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
 - [License](#license)
 
 ---
 
-## Overview
+## 🚀 Overview
 
-This project demonstrates a mini database-driven banking application. It allows branch employees to register, manage customer accounts, and enables customers to perform transactions and access various banking services.
+The **Bank Management System** is a Java-based desktop application designed to simplify daily banking tasks.  
+It allows employees to manage customer data and perform basic banking transactions securely through a MySQL database.
 
----
-
-## Features
-
-- **Employee Module**: Register and manage branch employees.  
-- **Account Module**: Create and manage customer accounts.  
-- **Transaction Module**: Deposit, withdraw, and check balance.  
-- **Services Module**: Provides additional services like insurance, loans, bill payments.  
-- **CRUD Operations**: Full Create, Read, Update, and Delete capabilities backed by MySQL.
+This project demonstrates database connectivity (JDBC), CRUD operations, and UI development using **JavaFX** — making it ideal for learning or academic projects.
 
 ---
 
-## Technologies
+## ✨ Features
 
-| Component        | Technology     |
+- 👩‍💼 **Employee Module** – Register and manage branch employees.  
+- 💳 **Account Module** – Create and maintain customer accounts.  
+- 💰 **Transaction Module** – Deposit, withdraw, and check balances.  
+- 🧾 **Service Module** – Access extra services like loans, insurance, and bill payments.  
+- 🧠 **Database-Driven** – Uses MySQL for persistent storage of all records.  
+- 🔄 **Full CRUD Support** – Create, Read, Update, Delete functionality implemented.
+
+---
+
+## 🧰 Tech Stack
+
+| Component         | Technology Used |
 |------------------|----------------|
-| Front-end UI     | JavaFX         |
-| Programming      | Java (JDK 8+)  |
-| IDE              | NetBeans 8.2 or Eclipse |
-| Database         | MySQL (via XAMPP) |
+| Front-End (UI)   | JavaFX |
+| Backend Logic     | Java (JDK 8+) |
+| Database          | MySQL (via XAMPP) |
+| IDE (Recommended) | NetBeans 8.2 / Eclipse |
+| Build Tool        | Ant / Manual Compile |
 
 ---
 
-## System Requirements
+## 💻 System Requirements
 
-- **OS**: Windows XP/7/10 or later  
-- **JDK**: Java Development Kit 8 or newer  
-- **IDE**: NetBeans 8.2 or Eclipse  
-- **Database**: MySQL via XAMPP
+- **Operating System:** Windows 7/10/11 (or later)
+- **Java Version:** JDK 8 or newer  
+- **IDE:** NetBeans / Eclipse  
+- **Database:** MySQL (via XAMPP or standalone)
 
 ---
 
-## Setup & Installation
+## ⚙️ Installation
 
-1. **Clone the repository**  
+1. **Clone the Repository**
    ```bash
    git clone https://github.com/sahilchirme49/Bank-Management-System.git
    cd Bank-Management-System
-````
-
-2. **Set Up MySQL Database**
-
-   * Launch XAMPP and start the MySQL module.
-   * Create a new schema/database (e.g., `bankdb`).
-   * Import the `bank.sql` script (if available) to create necessary tables:
-
-     ```bash
-     mysql -u root -p bankdb < bank.sql
-     ```
-
-3. **Configure Database Connection**
-
-   * Review or update database credentials (host, port, user, password, schema) in the source code—typically found in a config or DAO class.
-
-4. **Import Project into IDE**
-
-   * Open NetBeans or Eclipse and import the project.
-   * Ensure JavaFX libraries are properly referenced if they’re external.
-
-5. **Build and Run**
-
-   * Compile the project.
-   * Run the application and start using its features.
-
----
-
-## Usage Guide
-
-1. **Employee Login/Registration**: Create and manage branch employee accounts.
-2. **Customer Account Creation**: Employees can register new bank customers.
-3. **Transactions**: Perform account deposits, withdrawals, and balance checks.
-4. **Service Requests**: Access additional features like insurance, loans, or bill payments.
-
----
-
-## Project Structure
-
-```
-Bank-Management-System/
-├── src/                     # Java source code
-├── lib/                     # External libraries
-├── build.xml                # Build script (if using Ant)
-├── bank.sql                 # SQL schema/data dump
-├── EERDiagram_Bank.PNG      # Database model diagram
-└── README.md                # This documentation
-```
-
----
-
-## Contributing
-Contributions are welcome! To contribute:
-
-1. Fork this repository.
-2. Create a new feature branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes.
-4. Push to your fork and open a pull request.
-
-Please follow coding standards and include meaningful commit messages.
