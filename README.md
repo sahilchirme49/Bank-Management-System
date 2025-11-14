@@ -142,10 +142,6 @@ Make sure to write clean code and meaningful commit messages.
 
 ---
 
-## 📄 License
-
-This project is released under the **MIT License** — you’re free to use, modify, and distribute it with attribution.
-
 ---
 
 ### 💬 Author
